@@ -1,0 +1,46 @@
+services:
+
+  telematics:
+    build:
+      context: ./telematics/
+    # command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn telematics.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./telematics/:/usr/src/app/
+      - static_files:/usr/src/app/staticfiles
+    expose:
+      - 8000
+    # ports:
+    #   - 8000:8000
+    depends_on:
+      - db
+    env_file:
+      - ./.env/dev.env
+
+
+
+  nginx:
+    build:
+      context: ./nginx/
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - static_files:/home/app/staticfiles
+    depends_on:
+      - db
+
+
+
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+
+
+
+volumes:
+  static_files:
+
+
