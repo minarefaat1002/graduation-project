@@ -3,13 +3,12 @@ The Real-Time Vehicle Monitoring System allows vehicle owners to track and monit
 including live location, speed, and historical travel routes. The system ensures that users can easily access real-time 
 information through an intuitive web interface.
 # Features
-User Registration and Login: Secure authentication for vehicle owners to access the platform.
+* User Registration and Login: Secure authentication for vehicle owners to access the platform.
 
-Live Location Tracking: View real-time location updates of the vehicle.
+* Live Location Tracking: View real-time location updates of the vehicle.
 
-Historical Tracking: Access historical vehicle routes and locations.
-
-Speed Tracking: Track the speed of the vehicle during different intervals.
+* Historical Tracking: Access historical vehicle routes and locations.
+* Speed Tracking: Track the speed of the vehicle during different intervals.
 
 Data Visualization: Visualize vehicle data through charts and graphs.
 # The tech stack:
