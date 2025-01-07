@@ -4,13 +4,10 @@ including live location, speed, and historical travel routes. The system ensures
 information through an intuitive web interface.
 # Features
 * User Registration and Login: Secure authentication for vehicle owners to access the platform.
-
 * Live Location Tracking: View real-time location updates of the vehicle.
-
 * Historical Tracking: Access historical vehicle routes and locations.
 * Speed Tracking: Track the speed of the vehicle during different intervals.
-
-Data Visualization: Visualize vehicle data through charts and graphs.
+* Data Visualization: Visualize vehicle data through charts and graphs.
 # The tech stack:
 ## 🐳 Docker 
 Containerized the microservices to ensure easy deployment and scalability across environments.
